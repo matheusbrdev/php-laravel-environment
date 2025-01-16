@@ -27,7 +27,8 @@ $ sudo docker compose up -d
 ```bash
 $ sudo docker compose exec app composer install
 ```
-1. Generate the key for your project(only if the key doesn't exist in the `.env` file):
+1. Generate the key for your project (only if the key doesn't exist in the `.env` file):
 ```bash
 $ sudo docker compose exec app php artisan key:generate
 ```
+#### Congratulations! Your app is now being served!
