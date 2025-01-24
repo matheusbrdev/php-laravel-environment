@@ -12,6 +12,7 @@ $ sudo docker build -t my-username/my-image --build-arg user=<your-system-userna
 > * After `-t`, you must specify the name you want for the image;
 > * In `<your-system-username>`, you must specify your operational system's username;
 > * In `node`, you must specify the version of Node that you want.
+
 Example: 
 In my case, the command is as follows:
 ```bash
