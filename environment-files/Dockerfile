@@ -1,8 +1,8 @@
 FROM php:8.3-fpm
 
 ARG user
-ARG uid
 ARG node
+ARG uid=1000
 
 # Install system dependencies
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
