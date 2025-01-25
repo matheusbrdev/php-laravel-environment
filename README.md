@@ -4,7 +4,8 @@ An environment with PHP-FPM and Nginx, prepared to serve local Laravel apps.
 This will make your development process more realistic and closer to a production environment.
 
 # Usage
-### First, we need to build the image:
+1. Download this repository and open a terminal in its directory;
+2. We need to build the image: 
 ```bash
 $ sudo docker build -t my-username/my-image --build-arg user=<your-system-username> --build-arg node=22 ./environment-files/ 
 ```
