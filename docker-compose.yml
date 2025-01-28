@@ -1,14 +1,7 @@
 
 services:
     app:
-        build: 
-            args:
-                user: ${USERNAME}
-                uid: 1000
-                node: ${NODE_MAJOR}
-            context: ./environment-files
-            dockerfile: Dockerfile
-        image: local/php-fpm:8.3
+        image: matheusbrdev/php-fpm:8.3
         container_name: app
         restart: unless-stopped
         working_dir: /var/www/html
