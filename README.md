@@ -30,13 +30,15 @@ sudo docker container run --rm -v "$(pwd)/":/var/www/html matheusbrdev/php-fpm:8
 
 3. Copy the `docker-compose.yml` file and the `environment-files` folder,
 then paste them into the folder you created;
-4. Add in your `.env` this variable:
+4. Change the image name in `docker-compose.yml` to the name you chose in the build step;
+5. Add in your `.env` this variable:
 ```env
 APP_PORT=
 ```
-> * `APP_PORT` must be the port you want to use to serve the app on your machine;
-5. Now, run the following command:
+> `APP_PORT` must be the port you want to use to serve the app on your machine;
+6. Now, run the following command:
 ```bash
 $ sudo docker compose up -d
 ```
-6. Congratulations! Your app is now being served!
+
+Congratulations! Your app is now being served!
