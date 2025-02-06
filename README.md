@@ -42,7 +42,7 @@ $ sudo docker compose up -d
 ```
 7. Great! Your app is now being served!
 
-## Usage on an existing project
+## How to use in an existing project
 1. Copy the `docker-compose.yml` file and the `environment-files` folder,
 then paste them into your Laravel project directory;
 2. In your `.env` file, add this variable:
