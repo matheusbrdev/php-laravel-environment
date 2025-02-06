@@ -55,7 +55,7 @@ APP_PORT=
 ```bash
 $ sudo docker compose up --build -d
 ```
-5. Install the framework(only if the vendor folder doesn't exist):
+5. Install the framework(only if the `vendor` folder doesn't exist):
 ```bash
 $ sudo docker compose exec app composer install
 ```
