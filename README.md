@@ -4,7 +4,7 @@ An environment with PHP-FPM and Nginx, prepared to serve local Laravel apps.
 This will make your development process more realistic and closer to a production environment.
 
 # Usage
-### Download the repository and build the image
+## Download the repository and build the image
 1. Download this repository and open a terminal in its directory;
 2. We need to build the image: 
 ```bash
@@ -19,7 +19,7 @@ $ sudo docker build -t my-username/my-image --build-arg user=<your-system-userna
 > $ sudo docker build -t matheusbrdev/php-fpm:8.3 --build-arg user=matheusbrdev --build-arg node=22 ./environment-files/ 
 > ```
 
-### Creating a project 
+## Creating a project 
 1. Open your terminal in the path where you want to create the project;
 2. Create a Laravel project using the image you built:
 ```bash
@@ -42,7 +42,7 @@ $ sudo docker compose up -d
 ```
 7. Great! Your app is now being served!
 
-### Usage on an existing project
+## Usage on an existing project
 1. Copy the `docker-compose.yml` file and the `environment-files` folder,
 then paste them into your Laravel project directory;
 2. In your `.env` file, add this variable:
@@ -64,3 +64,5 @@ $ sudo docker compose exec app composer install
 $ sudo docker compose exec app php artisan key:generate
 ```
 7. Great! Your app is now being served!
+
+> *The services name is `app` and `server` in `docker-compose.yml`. You can change this if you want.*
